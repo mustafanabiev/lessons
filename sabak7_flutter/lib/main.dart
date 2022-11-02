@@ -1,5 +1,11 @@
+// import: бир object импортто
 import 'package:flutter/material.dart';
 
+// void: bir funksianyn turu ech nerse kaitarbait
+// main: bashtalgych funksianyn aty
+// (): main din bir funksia ekendigin bildiret
+// {}: main funksianun denesi (funksianun atkargan ishi jazylat)
+// runApp: funksia-(tirkemeni jurguzup beret, material.dart tan kelet)
 void main() {
   runApp(const MyApp());
 }
@@ -48,7 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'You have pushed the button this many times:...',
             ),
             Text(
               '$_counter',
