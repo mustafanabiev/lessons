@@ -44,7 +44,7 @@ class _MeninTirkememState extends State<MeninTirkemem> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const EkinchiBet(),
+                    builder: (context) => EkinchiBet(san: san),
                   ),
                 );
               },

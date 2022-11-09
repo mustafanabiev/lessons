@@ -18,7 +18,7 @@ class CounterPage extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const WidgetAppBar(),
+      home: const MeninTirkemem(),
     );
   }
 }

@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:sabak8_flutter/meninTirkemem.dart';
 
 class EkinchiBet extends StatelessWidget {
-  const EkinchiBet({Key? key}) : super(key: key);
+  EkinchiBet({
+    Key? key,
+    required this.san,
+  }) : super(key: key);
+
+  int san;
 
   @override
   Widget build(BuildContext context) {
@@ -16,25 +22,30 @@ class EkinchiBet extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-            color: const Color(0xffBDBDBD),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          width: 360,
-          height: 60,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                'сан: ',
-                style: TextStyle(fontSize: 24),
-              ),
-              Text(
-                '4',
-                style: TextStyle(fontSize: 24),
-              ),
-            ],
+        child: InkWell(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              color: const Color(0xffBDBDBD),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            width: 360,
+            height: 60,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'сан: ',
+                  style: TextStyle(fontSize: 24),
+                ),
+                Text(
+                  '$san',
+                  style: TextStyle(fontSize: 24),
+                ),
+              ],
+            ),
           ),
         ),
       ),
