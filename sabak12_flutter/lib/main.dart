@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +12,7 @@ class MeninTirkemem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'I am Rich',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.amber,
@@ -25,6 +28,7 @@ class IamRich extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.amber,
       appBar: AppBar(
         title: const Text('ТАПШЫРМА-03'),
         centerTitle: true,
@@ -33,10 +37,24 @@ class IamRich extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
               "I'am Rich",
-              style: TextStyle(fontSize: 36),
+              style: TextStyle(
+                fontSize: 36,
+                fontFamily: 'Raleway',
+              ),
             ),
+            Image.asset(
+              'images/jelek.jpg',
+              width: 300,
+              height: 300,
+            ),
+            Image.network(
+              'https://picsum.photos/200/300',
+              width: 300,
+              height: 300,
+            ),
+            
           ],
         ),
       ),
