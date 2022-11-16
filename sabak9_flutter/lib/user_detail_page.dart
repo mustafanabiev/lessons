@@ -27,6 +27,15 @@ class UserDetailPage extends StatelessWidget {
                 color: Colors.blueAccent,
               ),
             ),
+            //! 1
+            Text(
+              '${userData.jash}',
+              style: const TextStyle(
+                fontSize: 30,
+                color: Colors.blueAccent,
+              ),
+            ),
+            //! 2
             Text(
               userData.jash.toString(),
               style: const TextStyle(
