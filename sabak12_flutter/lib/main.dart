@@ -1,6 +1,6 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
+
+import 'misal.dart';
 
 void main() {
   runApp(const MeninTirkemem());
@@ -17,7 +17,7 @@ class MeninTirkemem extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.amber,
       ),
-      home: const IamRich(),
+      home: const FlashLight(),
     );
   }
 }
@@ -54,7 +54,6 @@ class IamRich extends StatelessWidget {
               width: 300,
               height: 300,
             ),
-            
           ],
         ),
       ),

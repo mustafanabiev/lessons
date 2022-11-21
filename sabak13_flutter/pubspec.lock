@@ -50,13 +50,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.1"
-  flashlight:
-    dependency: "direct main"
-    description:
-      name: flashlight
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.1.1"
   flutter:
     dependency: "direct main"
     description: flutter
