@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sabak13_flutter/card_page.dart';
 
 import 'home_page.dart';
 
@@ -14,7 +15,9 @@ class _LoginPageState extends State<LoginPage> {
   // String appBarText = 'LoginPage';
   // // private
   // String _appBarText = 'LoginPage';
-
+  String name = '';
+  String kesip = '';
+  String number = '';
   String email = '';
   String password = '';
 
@@ -29,6 +32,42 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            TextField(
+              onChanged: (String value) {
+                name = value;
+              },
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Name жазуу',
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            TextField(
+              onChanged: (String value) {
+                kesip = value;
+              },
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Кесибин жазуу',
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            TextField(
+              onChanged: (String value) {
+                number = value;
+              },
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: 'Phone number жазуу',
+              ),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
             TextField(
               onChanged: (String value) {
                 email = value;
@@ -73,9 +112,11 @@ class _LoginPageState extends State<LoginPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePage(
+                        builder: (context) => CardPage(
+                          name: name,
+                          kesip: kesip,
+                          number: number,
                           email: email,
-                          password: password,
                         ),
                       ),
                     );
