@@ -6,11 +6,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int san = 10;
-    String text = 'Salam';
+    // int san = 10;
+    // String text = 'Salam';
 
-    dynamic san2 = 20;
-    dynamic text2 = 'Kyrgyzstan';
+    // dynamic san2 = 20;
+    // dynamic text2 = 'Kyrgyzstan';
 
     return Scaffold(
       appBar: AppBar(
