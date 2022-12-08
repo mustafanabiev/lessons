@@ -28,12 +28,12 @@ class PianoWhiteButton extends StatelessWidget {
           child: const Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.only(bottom: 10),
+              padding: EdgeInsets.only(bottom: 20),
               child: Text(
                 'f3',
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 16,
+                  fontSize: 20,
                 ),
               ),
             ),
