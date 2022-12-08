@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: const Drawer(),
       appBar: AppBar(
+        backgroundColor: Colors.black,
         title: const Text('Flutter Piano'),
         centerTitle: true,
       ),
@@ -24,8 +25,8 @@ class HomePage extends StatelessWidget {
           Expanded(
             flex: 3,
             child: ListView.builder(
-              scrollDirection: Axis.horizontal,
               itemCount: 2,
+              scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 return Stack(
                   children: [
@@ -38,7 +39,7 @@ class HomePage extends StatelessWidget {
                         PianoWhiteButton(),
                         PianoWhiteButton(),
                         PianoWhiteButton(),
-                        // PianoWhiteButton(),
+                        PianoWhiteButton(),
                       ],
                     ),
                     Positioned(
@@ -51,7 +52,7 @@ class HomePage extends StatelessWidget {
                           PianoBlackButton(),
                           PianoBlackButton(),
                           PianoBlackButton(),
-                          // PianoBlackButton(),
+                          PianoBlackButton(visible: false),
                           PianoBlackButton(),
                           PianoBlackButton(),
                         ],
