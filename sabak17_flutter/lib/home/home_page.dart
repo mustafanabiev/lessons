@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sabak16_flutter/components/black_button.dart';
-import 'package:sabak16_flutter/components/white_button.dart';
+import 'package:sabak17_flutter/components/black_button.dart';
+import 'package:sabak17_flutter/components/white_button.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,14 +16,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: [
-          const Expanded(
-            flex: 1,
-            child: Center(
-              child: Text('do re mi fa ...'),
-            ),
-          ),
           Expanded(
-            flex: 3,
             child: ListView.builder(
               itemCount: 2,
               scrollDirection: Axis.horizontal,
@@ -33,14 +26,13 @@ class HomePage extends StatelessWidget {
                     Row(
                       mainAxisSize: MainAxisSize.min,
                       children: const [
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
-                        PianoWhiteButton(),
+                        PianoWhiteButton(nameNote: 'do'),
+                        PianoWhiteButton(nameNote: 're'),
+                        PianoWhiteButton(nameNote: 'mi'),
+                        PianoWhiteButton(nameNote: 'fa'),
+                        PianoWhiteButton(nameNote: 'sol'),
+                        PianoWhiteButton(nameNote: 'lya'),
+                        PianoWhiteButton(nameNote: 'si'),
                       ],
                     ),
                     Positioned(
@@ -50,15 +42,12 @@ class HomePage extends StatelessWidget {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: const [
-                          PianoBlackButton(),
-                          PianoBlackButton(),
-                          PianoBlackButton(),
-                          PianoBlackButton(
-                            visible: false,
-                          ),
-                          PianoBlackButton(),
-                          PianoBlackButton(),
-                          PianoBlackButton(),
+                          PianoBlackButton(nameNote: 'do'),
+                          PianoBlackButton(nameNote: 're'),
+                          PianoBlackButton(visible: false, nameNote: 'mi'),
+                          PianoBlackButton(nameNote: 'fa'),
+                          PianoBlackButton(nameNote: 'sol'),
+                          PianoBlackButton(nameNote: 'lya'),
                         ],
                       ),
                     ),
