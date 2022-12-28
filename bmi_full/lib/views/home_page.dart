@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
           } else if (result > 24.9) {
             showMyDialog(
               context: context,
-              text: 'Сенде ашыкча салмак коп. Озуно жакшы кара',
+              text: 'Сенде ашыкча салмак коп. Озуно жакшы кара. Спорт менен алектен',
             );
           } else {
             showMyDialog(
