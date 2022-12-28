@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:bmi_full/utils/app_colors.dart';
 import 'package:bmi_full/utils/app_styles.dart';
 import 'package:bmi_full/utils/app_text.dart';
