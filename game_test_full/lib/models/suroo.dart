@@ -28,7 +28,7 @@ List<Suroo> africaQuestions = [s3, s4, s9, s10, s7, s8, s5, s2, s6, s1];
 
 const s1 = Suroo(
   text: 'Ашхабат',
-  image: 'ashhabad',
+  image: 'asia/ashhabad.jpeg',
   jooptor: [
     Joop(text: 'Кыргызстан'),
     Joop(text: 'Керея'),
@@ -39,7 +39,7 @@ const s1 = Suroo(
 
 const s2 = Suroo(
   text: 'Астана',
-  image: 'astana',
+  image: 'asia/astana.jpeg',
   jooptor: [
     Joop(text: 'Казакстан', isTrue: true),
     Joop(text: 'Янопия'),
@@ -50,7 +50,7 @@ const s2 = Suroo(
 
 const s3 = Suroo(
   text: 'Бишкек',
-  image: 'bishkek',
+  image: 'asia/bishkek.jpeg',
   jooptor: [
     Joop(text: 'Кыргызстан', isTrue: true),
     Joop(text: 'Сингапур'),
@@ -60,8 +60,8 @@ const s3 = Suroo(
 );
 
 const s4 = Suroo(
-  text: 'Душанбе',
-  image: 'dushanbe',
+  text: 'Душанбе.jpeg',
+  image: 'asia/dushanbe',
   jooptor: [
     Joop(text: 'Кыргызстан'),
     Joop(text: 'Керея'),
@@ -72,7 +72,7 @@ const s4 = Suroo(
 
 const s5 = Suroo(
   text: 'Ню-Дели',
-  image: 'new-delhi',
+  image: 'asia/new-delhi.jpeg',
   jooptor: [
     Joop(text: 'Иран'),
     Joop(text: 'Сирия'),
@@ -83,7 +83,7 @@ const s5 = Suroo(
 
 const s6 = Suroo(
   text: 'Пекин',
-  image: 'pekin',
+  image: 'asia/pekin.jpeg',
   jooptor: [
     Joop(text: 'Кытай', isTrue: true),
     Joop(text: 'Керея'),
@@ -94,7 +94,7 @@ const s6 = Suroo(
 
 const s7 = Suroo(
   text: 'Сеул',
-  image: 'seul',
+  image: 'asia/seul.jpeg',
   jooptor: [
     Joop(text: 'Тайланд'),
     Joop(text: 'Керея', isTrue: true),
@@ -105,7 +105,7 @@ const s7 = Suroo(
 
 const s8 = Suroo(
   text: 'Ташкент',
-  image: 'tashkent',
+  image: 'asia/tashkent.jpeg',
   jooptor: [
     Joop(text: 'Кыргызстан'),
     Joop(text: 'Россия'),
@@ -116,7 +116,7 @@ const s8 = Suroo(
 
 const s9 = Suroo(
   text: 'Токио',
-  image: 'tokyo',
+  image: 'asia/tokyo.jpeg',
   jooptor: [
     Joop(text: 'Япония', isTrue: true),
     Joop(text: 'Конго'),
@@ -127,7 +127,7 @@ const s9 = Suroo(
 
 const s10 = Suroo(
   text: 'Улан-Батор',
-  image: 'ulan_bator',
+  image: 'asia/ulan_bator.jpeg',
   jooptor: [
     Joop(text: 'Япония'),
     Joop(text: 'Манголия', isTrue: true),
