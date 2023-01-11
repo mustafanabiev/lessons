@@ -48,7 +48,8 @@ class _TestPageState extends State<TestPage> {
             child: Padding(
               padding: const EdgeInsets.all(10),
               child: Image.asset(
-                  'assets/images/${widget.suroo[index].image}.jpeg'),
+                'assets/images/${widget.suroo[index].image}',
+              ),
             ),
           ),
           VariantButton(
